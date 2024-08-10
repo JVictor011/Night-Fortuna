@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container-body">
+      <h1>Night Fortuna</h1>
+      <div class="container">
+        <div class="roulette-container">
+          <img src="src/img/roleta.png" alt="Roleta" class="roulette" />
+        </div>
+        <input type="number" id="userInput" placeholder="Digite um número" />
+        <button id="submitBtn">Enviar</button>
+        <button id="resetBtn" style="display: none">Reiniciar Jogo</button>
+        <p id="feedbackMsg"></p>
+        <p>Tentativas restantes: <span id="attemptsCount">3</span></p>
+        <p>Tentativas: <span id="attemptsList">Nenhuma</span></p>
+      </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </body>
+</html>
