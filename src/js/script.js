@@ -51,18 +51,16 @@ function verificaNumero(number) {
         "Parabéns! Você acertou o número!";
       showConfetti();
     } else {
-      if (luckyNumber > number) {
+      if (attempts.length == maxAttempts) {
+        document.getElementById(
+          "feedbackMsg"
+        ).textContent = `O número correto era ${luckyNumber}`;
+      } else if (luckyNumber > number) {
         document.getElementById("feedbackMsg").textContent =
           "O número é maior.";
       } else {
-        if (attempts.length == maxAttempts) {
-          document.getElementById(
-            "feedbackMsg"
-          ).textContent = `O número correto era ${luckyNumber}`;
-        } else {
-          document.getElementById("feedbackMsg").textContent =
-            "O número é menor.";
-        }
+        document.getElementById("feedbackMsg").textContent =
+          "O número é menor.";
       }
     }
     updateUI();
