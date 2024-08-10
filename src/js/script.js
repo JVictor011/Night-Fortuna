@@ -49,12 +49,14 @@ function verificaNumero(number) {
       isWinner = true;
       document.getElementById("feedbackMsg").textContent =
         "Parabéns! Você acertou o número!";
+      document.getElementById("feedbackMsg").style.color = "green";
       showConfetti();
     } else {
       if (attempts.length == maxAttempts) {
         document.getElementById(
           "feedbackMsg"
         ).textContent = `O número correto era ${luckyNumber}`;
+        document.getElementById("feedbackMsg").style.color = "red";
       } else if (luckyNumber > number) {
         document.getElementById("feedbackMsg").textContent =
           "O número é maior.";
@@ -78,6 +80,7 @@ function resetGame() {
   updateUI();
   document.getElementById("feedbackMsg").textContent =
     "O jogo foi reiniciado. Boa sorte!";
+  document.getElementById("feedbackMsg").style.color = "black";
 }
 
 function showConfetti() {
