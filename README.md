@@ -1,5 +1,5 @@
-# Jogo de Adivinhação
-
+# Night Fortuna
+![Logo do Projeto](https://raw.githubusercontent.com/JVictor011/Night-Fortuna/main/src/img/Default_Create_a_majestic_bat_pet_for_the_Night_Fortuna_game_s_0.jpg)
 ## Descrição
 
 O Jogo de Adivinhação é uma aplicação web simples desenvolvida como parte do Desafio 04 na disciplina de Desenvolvimento de Software para Web. O objetivo do jogo é permitir que o usuário tente adivinhar um número gerado aleatoriamente pelo sistema. O usuário tem até 3 tentativas para acertar o número. A aplicação fornece feedback sobre se o número digitado pelo usuário é muito alto ou muito baixo em relação ao número correto.
