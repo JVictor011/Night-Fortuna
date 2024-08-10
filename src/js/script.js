@@ -3,6 +3,23 @@ let maxAttempts = 3;
 let isWinner = false;
 let luckyNumber = randomNumber();
 
+window.onload = function () {
+  const popup = document.getElementById("popup");
+  const closePopup = document.getElementById("closePopup");
+
+  popup.style.display = "flex";
+
+  closePopup.onclick = function () {
+    popup.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };
+};
+
 function randomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
